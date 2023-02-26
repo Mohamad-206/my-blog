@@ -1,0 +1,25 @@
+[{
+     "a_1":"الرىْيسية",
+     "a_2":"من نحن ",
+    "a_3":"المقالات",
+    "a_4":"تواصل معنا",
+    "a_5":"الاقسام",
+    "main":"مرحبا بكم في مدونة برمجة  هذه المدونة تعرض المقالات المتنوعة المتعلقة بمجال البرمجة وتصميم المواقع وتدعم اللغة العربية والانجليزية",
+    "h1":"مرحبا بكم في مدونة",
+    "span":"برمجة",
+     "who_are_we":"Welcome to barmaja blog This blog displays various articles related to the field of programming, web design, cybersecurity, and the field of artificial intelligence",
+     "About-us":"مدونة برمجة مدونة بسيطة هدفها افادة المهتمين بمجال البرمجة بشكل عام تشمل مواضيع متعددة اهمها مجال البرمجة  backend  الامن السيبراني frontend الذكاء الاصطناعي  بيئات العمل بعض النصاىْح للمبرمجين المبتدىْين بعض الاسألة الشاىْعة واجاباتها والمزيد قريبا..." 
+      
+    
+  },
+{
+  "a_1":"Home",
+     "a_2":"About us",
+    "a_3":"Articles",
+    "a_4":"Connect with us",
+    "a_5":"Sections",
+    "h1":"Welcome to blog",
+    "span":"barmaja",
+    "main":"Welcome to barmaja blog This blog displays various articles related to the field of programming and web design and supports Arabic and English",
+    "About-us":"Programming blog A simple blog aimed at benefiting those interested in the field of programming in general, covering various topics, the most important of which is programming field backend Cyber security frontend artificial intelligence  work environments Some tips for novice programmers Some common questions and their answers And more coming soon..."
+    }]

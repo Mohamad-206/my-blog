@@ -1,0 +1,235 @@
+:root {
+    --dark-mode-color :#172028;
+    --light-mode-color:#f6f6f6;
+    --sun-color:#f9d71c;
+    --moon-color: #00abfd;
+    --moon-overlay : #00abdf7a;
+    --sun-overlay: #f9d81c46;
+}
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    outline: none;
+    list-style: none;
+}
+ 
+.contenar {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+body {
+    background-color: var(--light-mode-color);
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.4s;
+}
+
+/* ========== Start Header ========== */
+header {
+    height: 100px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 5px 5px;
+}
+
+header .contenar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header .contenar .logo {
+    width: 100px;
+}
+header .contenar .logo img {
+    width: 100%;
+}
+header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+header .content ul {
+display: flex;
+gap: 0 20px;
+transition: all 0.4s ease-in-out;
+z-index: 23;
+}
+header .content ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all .5s linear;
+    opacity: 0.5;
+    position: relative;
+}
+header .content ul li a:hover  {
+    opacity: 1;
+}
+.switch-btn {
+ margin:0  20px;
+ position: relative;
+}
+.switch-btn .border {
+    display: flex;
+     padding: 17px 8px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 75px;
+    height: 38px;
+    position: relative;
+    z-index: 1;
+    background-color: var(--sun-overlay);
+ transition: all 0.4s ease;
+ }
+ 
+ .border-span {
+     background-color: var(--sun-color);
+     position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.5;
+     top: 9%;
+      margin: 0 3px;
+    transition: all 0.4s;
+     }
+ .border-span.active {
+    right:2%;
+  }
+ .border-span.activeT {
+    left:1%;
+  }
+.switch-btn .border .sun {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+ }
+  
+.switch-btn .border .moon {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+ }
+.bars {
+    font-size:20px;
+    cursor:pointer;
+    color: #2c3e50;
+}
+header ul.active {
+
+    height: 26%;
+    overflow: visible;
+}
+/* ========== End Header ========== */
+/* ========== Start main ========== */
+main {
+    background-size: cover;
+     position: relative;
+    z-index: 1;
+    padding: 70px 0;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+  
+ main .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+main .info {
+    width: 45%;
+    transition: all 1s ease-in-out;
+    position: relative;
+    left: -66px;
+    opacity:0;
+}
+.info.active {
+    left:0;
+    opacity:1;
+}
+main .content h1 {
+    margin: 20px 0;
+    color:#2c3e50;
+}
+ main .content h1 .barmaja {
+    color: #00abdf;
+ }
+main .content p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height:1.5;
+}
+main img {
+    max-width: 100%;
+    width: 40%;
+    transition: all 1s ease-in-out;
+    position: relative;
+    right: -90px;
+    opacity: 0;
+ }
+ main img.active {
+    right: 0;
+    opacity: 1;
+ }
+ #select-lang {
+     width: 50px;
+    padding: 2px 0;
+    border-radius: 3px;
+    font-weight: 400;
+    border: 1px solid #ccc;
+ }
+ /* ========== End main ========== */
+ /* ========== Start ads ========== */
+    .ads {
+        padding:50px 0;
+         height:300px;
+    }
+    .ads .contenar {
+        height:100%;
+    }
+     /* ========== End ads ========== */
+     /* ========== Start about-us ========== */
+     .about-us .contenar  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about-us .contenar .info-box {
+        width: 60%;
+          padding: 10px 20px;
+        border-radius: 5px;
+        position: relative;
+        z-index:1;
+    }
+     .about-us .contenar .info-box h2 {
+        margin-bottom:15px;
+        color:#2c3e50;
+        font-size:30px;
+        font-weight: 700;
+     }
+     .about-us .contenar .info-box h2 span {
+        color:var(--moon-color);
+     }
+    .about-us .contenar .info-box p {
+        line-height: 1.5;
+        font-weight:500;
+        font-size:18px;
+    }
+     /* ========== End about-us ========== */
